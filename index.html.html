@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Just a Little Note for Gauri</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;600&display=swap');
+    body {
+        margin: 0; padding: 0;
+        background: radial-gradient(circle at top left, #fce3ec, #f1d4d4, #ffffff);
+        font-family: 'Montserrat', sans-serif;
+        display: flex; justify-content: center; align-items: center;
+        height: 100vh; color: #5c3a3a;
+        background-repeat: no-repeat;
+    }
+    .card {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 3rem 2.5rem;
+        border-radius: 30px;
+        box-shadow: 0 10px 30px rgba(204, 122, 153, 0.3);
+        max-width: 400px;
+        text-align: center;
+        position: relative;
+    }
+    .heart {
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        color: #d6698f;
+        position: absolute;
+        top: 20px; right: 25px;
+        user-select: none;
+        animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+    }
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.8rem;
+        color: #b03f5a;
+        margin-bottom: 0.1em;
+    }
+    p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        margin: 1.2em 0 2em;
+        color: #6b5050;
+        letter-spacing: 0.02em;
+    }
+    .emoji {
+        font-size: 1.6rem;
+        margin-left: 6px;
+        vertical-align: middle;
+    }
+    a {
+        display: inline-block;
+        background: #b03f5a;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.75em 2em;
+        border-radius: 40px;
+        box-shadow: 0 5px 15px rgba(176, 63, 90, 0.5);
+        transition: background 0.3s ease;
+        user-select: none;
+    }
+    a:hover {
+        background: #8a2e48;
+        box-shadow: 0 8px 25px rgba(138, 46, 72, 0.7);
+    }
+</style>
+</head>
+<body>
+<div class="card" role="main" aria-label="Subtle romantic message to Gauri">
+    <div class="heart" aria-hidden="true">❤</div>
+    <h1>Hi Gauri<span class="emoji">🌸</span></h1>
+    <p>Just a little note to say...  
+       I enjoy your pictures and that lovely voice.  
+       It’s kinda nice, you know?<span class="emoji">😊</span></p>
+    <a href="mailto:your-email@example.com" aria-label="Send pics and a voice note to me">Send pics & voice note</a>
+</div>
+</body>
+</html>
