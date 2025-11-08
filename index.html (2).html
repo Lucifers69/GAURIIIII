@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hey Gauri! 😉</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9a8d4, #fef08a, #6ee7b7);
+            font-family: 'Baloo 2', cursive, sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            user-select: none;
+        }
+        .container {
+            background: white;
+            padding: 2.5em 3em;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            max-width: 360px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        h1 {
+            font-size: 2.4em;
+            color: #e91e63;
+            margin-bottom: 0.2em;
+            user-select: text;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 0.4em 0 1.5em;
+            color: #444;
+            line-height: 1.4;
+            user-select: text;
+        }
+        .emoji {
+            font-size: 1.5em;
+            transform: rotate(-15deg);
+            display: inline-block;
+            margin-left: 6px;
+        }
+        a.send-link {
+            display: inline-block;
+            background: #f9a8d4;
+            color: white;
+            font-weight: 700;
+            padding: 0.6em 1.6em;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(233,30,99,0.6);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            user-select: none;
+        }
+        a.send-link:hover {
+            background: #e91e63;
+            box-shadow: 0 8px 20px rgba(233,30,99,0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <h1>Hey Gauri! <span class="emoji">😉</span></h1>
+        <p>
+            Not saying I’m obsessed,<br />
+            but your pics would definitely make my day.<br />
+            Also, I kinda like to hear that voice of yours 👂<span class="emoji">😏</span>
+        </p>
+        <a href="mailto:your-email@example.com" class="send-link" aria-label="Send pics and voice note">Send me your pics & voice note!</a>
+    </div>
+</body>
+</html>
